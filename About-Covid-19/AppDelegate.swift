@@ -6,6 +6,11 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import KakaoSDKCommon
+import KakaoSDKAuth
+import KakaoSDKUser
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+          
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        FBSDKCoreKit.Settings.appID = "582428363078055"
+        KakaoSDKCommon.initSDK(appKey: "4f4328ba5d42fcf3d34fffba19d9f08c")
+        
         return true
     }
 

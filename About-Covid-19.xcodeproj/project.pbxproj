@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69F256E8A2A5E9CB5AFAE934 /* Pods_About_Covid_19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC18D94F647B3AE64681FB3 /* Pods_About_Covid_19.framework */; };
 		9978D9CA27155EEF009DD07A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D9C927155EEF009DD07A /* AppDelegate.swift */; };
 		9978D9CC27155EEF009DD07A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D9CB27155EEF009DD07A /* SceneDelegate.swift */; };
-		9978D9CE27155EEF009DD07A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D9CD27155EEF009DD07A /* ViewController.swift */; };
+		9978D9CE27155EEF009DD07A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D9CD27155EEF009DD07A /* StartViewController.swift */; };
 		9978D9D127155EEF009DD07A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9978D9CF27155EEF009DD07A /* Main.storyboard */; };
 		9978D9D327155EF0009DD07A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9978D9D227155EF0009DD07A /* Assets.xcassets */; };
 		9978D9D627155EF0009DD07A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9978D9D427155EF0009DD07A /* LaunchScreen.storyboard */; };
+		9978DAB02716BD2D009DD07A /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9978DAAF2716BD2D009DD07A /* FacebookCore */; };
+		9978DAB22716BD2D009DD07A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 9978DAB12716BD2D009DD07A /* FacebookLogin */; };
+		9978DAB42716D0B9009DD07A /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978DAB32716D0B9009DD07A /* Extension_UIView.swift */; };
+		9978DAB62716D5BA009DD07A /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978DAB52716D5BA009DD07A /* firstViewController.swift */; };
+		9978DAB82716D5C2009DD07A /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978DAB72716D5C2009DD07A /* secondViewController.swift */; };
+		9978DABA2716D5D0009DD07A /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978DAB92716D5D0009DD07A /* thirdViewController.swift */; };
+		9978DABC2716D622009DD07A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978DABB2716D622009DD07A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04937D65D74006E3504EFE39 /* Pods-About-Covid-19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-About-Covid-19.release.xcconfig"; path = "Target Support Files/Pods-About-Covid-19/Pods-About-Covid-19.release.xcconfig"; sourceTree = "<group>"; };
+		8AC18D94F647B3AE64681FB3 /* Pods_About_Covid_19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_About_Covid_19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9978D9C627155EEF009DD07A /* About-Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "About-Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9978D9C927155EEF009DD07A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9978D9CB27155EEF009DD07A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9978D9CD27155EEF009DD07A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9978D9CD27155EEF009DD07A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		9978D9D027155EEF009DD07A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9978D9D227155EF0009DD07A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9978D9D527155EF0009DD07A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9978D9D727155EF0009DD07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9978DAB32716D0B9009DD07A /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
+		9978DAB52716D5BA009DD07A /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		9978DAB72716D5C2009DD07A /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		9978DAB92716D5D0009DD07A /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		9978DABB2716D622009DD07A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5DF72E2E064F8E5145D618C /* Pods-About-Covid-19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-About-Covid-19.debug.xcconfig"; path = "Target Support Files/Pods-About-Covid-19/Pods-About-Covid-19.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9978DAB22716BD2D009DD07A /* FacebookLogin in Frameworks */,
+				9978DAB02716BD2D009DD07A /* FacebookCore in Frameworks */,
+				69F256E8A2A5E9CB5AFAE934 /* Pods_About_Covid_19.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89C327D5E21556B5D0FC745C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AC18D94F647B3AE64681FB3 /* Pods_About_Covid_19.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9978D9BD27155EEF009DD07A = {
 			isa = PBXGroup;
 			children = (
 				9978D9C827155EEF009DD07A /* About-Covid-19 */,
 				9978D9C727155EEF009DD07A /* Products */,
+				ED9DE12F6C55CADF8EFBE4D2 /* Pods */,
+				89C327D5E21556B5D0FC745C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +87,35 @@
 			children = (
 				9978D9C927155EEF009DD07A /* AppDelegate.swift */,
 				9978D9CB27155EEF009DD07A /* SceneDelegate.swift */,
-				9978D9CD27155EEF009DD07A /* ViewController.swift */,
+				9978DABD2716D62D009DD07A /* ViewController */,
 				9978D9CF27155EEF009DD07A /* Main.storyboard */,
 				9978D9D227155EF0009DD07A /* Assets.xcassets */,
 				9978D9D427155EF0009DD07A /* LaunchScreen.storyboard */,
 				9978D9D727155EF0009DD07A /* Info.plist */,
+				9978DAB32716D0B9009DD07A /* Extension_UIView.swift */,
 			);
 			path = "About-Covid-19";
+			sourceTree = "<group>";
+		};
+		9978DABD2716D62D009DD07A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9978D9CD27155EEF009DD07A /* StartViewController.swift */,
+				9978DABB2716D622009DD07A /* ViewController.swift */,
+				9978DAB52716D5BA009DD07A /* firstViewController.swift */,
+				9978DAB72716D5C2009DD07A /* secondViewController.swift */,
+				9978DAB92716D5D0009DD07A /* thirdViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ED9DE12F6C55CADF8EFBE4D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF72E2E064F8E5145D618C /* Pods-About-Covid-19.debug.xcconfig */,
+				04937D65D74006E3504EFE39 /* Pods-About-Covid-19.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +125,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9978D9DA27155EF0009DD07A /* Build configuration list for PBXNativeTarget "About-Covid-19" */;
 			buildPhases = (
+				517FF815D24BABBD9AB83B79 /* [CP] Check Pods Manifest.lock */,
 				9978D9C227155EEF009DD07A /* Sources */,
 				9978D9C327155EEF009DD07A /* Frameworks */,
 				9978D9C427155EEF009DD07A /* Resources */,
+				1F4B57AFE985656FCA783B1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "About-Covid-19";
+			packageProductDependencies = (
+				9978DAAF2716BD2D009DD07A /* FacebookCore */,
+				9978DAB12716BD2D009DD07A /* FacebookLogin */,
+			);
 			productName = "About-Covid-19";
 			productReference = 9978D9C627155EEF009DD07A /* About-Covid-19.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 9978D9BD27155EEF009DD07A;
+			packageReferences = (
+				9978DAAE2716BD2D009DD07A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 9978D9C727155EEF009DD07A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,14 +193,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F4B57AFE985656FCA783B1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-About-Covid-19/Pods-About-Covid-19-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-About-Covid-19/Pods-About-Covid-19-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-About-Covid-19/Pods-About-Covid-19-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		517FF815D24BABBD9AB83B79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-About-Covid-19-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9978D9C227155EEF009DD07A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9978D9CE27155EEF009DD07A /* ViewController.swift in Sources */,
+				9978D9CE27155EEF009DD07A /* StartViewController.swift in Sources */,
+				9978DABA2716D5D0009DD07A /* thirdViewController.swift in Sources */,
+				9978DAB62716D5BA009DD07A /* firstViewController.swift in Sources */,
 				9978D9CA27155EEF009DD07A /* AppDelegate.swift in Sources */,
+				9978DAB42716D0B9009DD07A /* Extension_UIView.swift in Sources */,
+				9978DAB82716D5C2009DD07A /* secondViewController.swift in Sources */,
 				9978D9CC27155EEF009DD07A /* SceneDelegate.swift in Sources */,
+				9978DABC2716D622009DD07A /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +391,7 @@
 		};
 		9978D9DB27155EF0009DD07A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DF72E2E064F8E5145D618C /* Pods-About-Covid-19.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +420,7 @@
 		};
 		9978D9DC27155EF0009DD07A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04937D65D74006E3504EFE39 /* Pods-About-Covid-19.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,6 +469,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9978DAAE2716BD2D009DD07A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9978DAAF2716BD2D009DD07A /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9978DAAE2716BD2D009DD07A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		9978DAB12716BD2D009DD07A /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9978DAAE2716BD2D009DD07A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9978D9BE27155EEF009DD07A /* Project object */;
 }
