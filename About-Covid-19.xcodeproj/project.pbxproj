@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		69F256E8A2A5E9CB5AFAE934 /* Pods_About_Covid_19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC18D94F647B3AE64681FB3 /* Pods_About_Covid_19.framework */; };
+		99002D70271821D900E0A460 /* Safe_Restaurant_ResponseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99002D6F271821D900E0A460 /* Safe_Restaurant_ResponseService.swift */; };
+		99002D72271821E200E0A460 /* Safe_Restaurant_Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99002D71271821E200E0A460 /* Safe_Restaurant_Response.swift */; };
+		99002D74271821FE00E0A460 /* Safe_Restaurant_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99002D73271821FE00E0A460 /* Safe_Restaurant_Request.swift */; };
+		99002D77271822EB00E0A460 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99002D75271822EB00E0A460 /* DetailTableViewCell.swift */; };
+		99002D78271822EB00E0A460 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99002D76271822EB00E0A460 /* DetailTableViewCell.xib */; };
+		99002D7A2718305500E0A460 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99002D792718305500E0A460 /* global.swift */; };
 		9978D9CA27155EEF009DD07A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D9C927155EEF009DD07A /* AppDelegate.swift */; };
 		9978D9CC27155EEF009DD07A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D9CB27155EEF009DD07A /* SceneDelegate.swift */; };
 		9978D9CE27155EEF009DD07A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D9CD27155EEF009DD07A /* StartViewController.swift */; };
@@ -26,6 +32,12 @@
 /* Begin PBXFileReference section */
 		04937D65D74006E3504EFE39 /* Pods-About-Covid-19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-About-Covid-19.release.xcconfig"; path = "Target Support Files/Pods-About-Covid-19/Pods-About-Covid-19.release.xcconfig"; sourceTree = "<group>"; };
 		8AC18D94F647B3AE64681FB3 /* Pods_About_Covid_19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_About_Covid_19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99002D6F271821D900E0A460 /* Safe_Restaurant_ResponseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safe_Restaurant_ResponseService.swift; sourceTree = "<group>"; };
+		99002D71271821E200E0A460 /* Safe_Restaurant_Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safe_Restaurant_Response.swift; sourceTree = "<group>"; };
+		99002D73271821FE00E0A460 /* Safe_Restaurant_Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safe_Restaurant_Request.swift; sourceTree = "<group>"; };
+		99002D75271822EB00E0A460 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		99002D76271822EB00E0A460 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		99002D792718305500E0A460 /* global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
 		9978D9C627155EEF009DD07A /* About-Covid-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "About-Covid-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9978D9C927155EEF009DD07A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9978D9CB27155EEF009DD07A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		99002D6B27181D8100E0A460 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9978D9C927155EEF009DD07A /* AppDelegate.swift */,
+				9978D9CB27155EEF009DD07A /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		99002D6C27181D9100E0A460 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9978D9CF27155EEF009DD07A /* Main.storyboard */,
+				9978D9D427155EF0009DD07A /* LaunchScreen.storyboard */,
+				99002D75271822EB00E0A460 /* DetailTableViewCell.swift */,
+				99002D76271822EB00E0A460 /* DetailTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99002D6D271821AC00E0A460 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				99002D73271821FE00E0A460 /* Safe_Restaurant_Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		99002D6E271821B000E0A460 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				99002D6F271821D900E0A460 /* Safe_Restaurant_ResponseService.swift */,
+				99002D71271821E200E0A460 /* Safe_Restaurant_Response.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		9978D9BD27155EEF009DD07A = {
 			isa = PBXGroup;
 			children = (
@@ -85,19 +134,20 @@
 		9978D9C827155EEF009DD07A /* About-Covid-19 */ = {
 			isa = PBXGroup;
 			children = (
-				9978D9C927155EEF009DD07A /* AppDelegate.swift */,
-				9978D9CB27155EEF009DD07A /* SceneDelegate.swift */,
-				9978DABD2716D62D009DD07A /* ViewController */,
-				9978D9CF27155EEF009DD07A /* Main.storyboard */,
+				99002D6E271821B000E0A460 /* Response */,
+				99002D6D271821AC00E0A460 /* Request */,
+				99002D6B27181D8100E0A460 /* App */,
+				9978DABD2716D62D009DD07A /* Controller */,
+				99002D6C27181D9100E0A460 /* View */,
 				9978D9D227155EF0009DD07A /* Assets.xcassets */,
-				9978D9D427155EF0009DD07A /* LaunchScreen.storyboard */,
 				9978D9D727155EF0009DD07A /* Info.plist */,
 				9978DAB32716D0B9009DD07A /* Extension_UIView.swift */,
+				99002D792718305500E0A460 /* global.swift */,
 			);
 			path = "About-Covid-19";
 			sourceTree = "<group>";
 		};
-		9978DABD2716D62D009DD07A /* ViewController */ = {
+		9978DABD2716D62D009DD07A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				9978D9CD27155EEF009DD07A /* StartViewController.swift */,
@@ -106,7 +156,7 @@
 				9978DAB72716D5C2009DD07A /* secondViewController.swift */,
 				9978DAB92716D5D0009DD07A /* thirdViewController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		ED9DE12F6C55CADF8EFBE4D2 /* Pods */ = {
@@ -187,6 +237,7 @@
 			files = (
 				9978D9D627155EF0009DD07A /* LaunchScreen.storyboard in Resources */,
 				9978D9D327155EF0009DD07A /* Assets.xcassets in Resources */,
+				99002D78271822EB00E0A460 /* DetailTableViewCell.xib in Resources */,
 				9978D9D127155EEF009DD07A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,10 +295,15 @@
 				9978DABA2716D5D0009DD07A /* thirdViewController.swift in Sources */,
 				9978DAB62716D5BA009DD07A /* firstViewController.swift in Sources */,
 				9978D9CA27155EEF009DD07A /* AppDelegate.swift in Sources */,
+				99002D74271821FE00E0A460 /* Safe_Restaurant_Request.swift in Sources */,
+				99002D7A2718305500E0A460 /* global.swift in Sources */,
+				99002D72271821E200E0A460 /* Safe_Restaurant_Response.swift in Sources */,
+				99002D77271822EB00E0A460 /* DetailTableViewCell.swift in Sources */,
 				9978DAB42716D0B9009DD07A /* Extension_UIView.swift in Sources */,
 				9978DAB82716D5C2009DD07A /* secondViewController.swift in Sources */,
 				9978D9CC27155EEF009DD07A /* SceneDelegate.swift in Sources */,
 				9978DABC2716D622009DD07A /* ViewController.swift in Sources */,
+				99002D70271821D900E0A460 /* Safe_Restaurant_ResponseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

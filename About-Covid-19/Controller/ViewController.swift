@@ -34,7 +34,7 @@ class ViewController: TabmanViewController {
         addBar(bar, dataSource: self, at: .top)
         
         //bar.backgroundView.style = .blur(style: .regular) //bar 배경스타일 변경
-        bar.backgroundView.style = .blur(style: .systemChromeMaterial)
+        bar.backgroundView.style = .clear
         bar.layout.contentInset = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0) //bar item 위치변경
         bar.buttons.customize { (button) in
             button.tintColor = .white
