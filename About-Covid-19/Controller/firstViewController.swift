@@ -85,6 +85,8 @@ class firstViewController: UIViewController, XMLParserDelegate {
         
     }
     
+    
+    
     func requestCovidInfo() {
         
         //MARK: - view가 load 되는 현재 시간 저장

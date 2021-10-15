@@ -41,6 +41,7 @@ class StartViewController: UIViewController {
         mainLogin.layer.shadowOffset = CGSize(width: 0, height: 4)
         mainLogin.layer.shadowRadius = 5
         mainLogin.layer.shadowOpacity = 0.3
+        mainLogin.layer.cornerRadius = 4
         
         login2.layer.shadowColor = UIColor.black.cgColor
         login2.layer.masksToBounds = false
@@ -61,10 +62,13 @@ class StartViewController: UIViewController {
             if let error = error {
                 print("Process error: \(error)")
                 return
+
             }
             guard let result = result else {
                 print("No Result")
+
                 return
+
             }
             if result.isCancelled {
                 print("Login Cancelled")
@@ -75,27 +79,35 @@ class StartViewController: UIViewController {
             //  - isCancelled : 사용자가 로그인을 취소했는지 여부
             //  - grantedPermissions : 부여 된 권한 집합
             //
+            self.loginLogic()
+            global.checkAccount = 3
     }
+        
 }
         
     @IBAction func login(_ sender: UIButton) {
         
-                UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
-           if let error = error {
-               print(error)
-           }
-           else {
-               print("loginWithKakaoAccount() success.")
+        UserApi.shared.loginWithKakaoAccount(prompts:[.Login]) {(oauthToken, error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("loginWithKakaoAccount() success.")
+                global.checkAccount = 2
+                self.loginLogic()
+                //do something
                 _ = oauthToken
-               
-
-               
-               
-         }
-     }
+                    
+            }
+        }
     }
 
     @IBAction func mainLogin(_ sender: UIButton) {
+        loginLogic()
+        global.checkAccount = 1
+    }
+    
+    func loginLogic() {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController {
             //스토리보드가 있으면 스토리보드에 SecondVC라는 이름을 가진 ViewViewController 인스턴스를 만드는데 그거의 타입은 SecondViewController이다.
             

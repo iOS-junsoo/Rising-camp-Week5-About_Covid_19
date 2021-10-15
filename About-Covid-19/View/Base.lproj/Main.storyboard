@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="About_Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" id="BYZ-38-t0r" customClass="StartViewController" customModule="About_Covid_19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,14 +88,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="로그인">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
-                                    <color key="baseBackgroundColor" red="0.13722297550000001" green="0.34511655569999999" blue="0.48229163889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.1960321069" green="0.42355087400000002" blue="0.5136594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -174,6 +175,101 @@
             </objects>
             <point key="canvasLocation" x="492" y="119"/>
         </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="3So-RN-vTn">
+            <objects>
+                <viewController storyboardIdentifier="PopUpViewController" id="ZHB-pz-lZH" customClass="PopUpViewController" customModule="About_Covid_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CiK-ql-hsG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaV-QU-0kA">
+                                <rect key="frame" x="16" y="174" width="358" height="496"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="앱 설명과 사용방법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apq-re-GWC">
+                                        <rect key="frame" x="76" y="15" width="206" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeJ-pC-oiI">
+                                        <rect key="frame" x="55" y="72.000000000000057" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-yn-iQE">
+                                        <rect key="frame" x="308.66666666666669" y="17" width="41.333333333333314" height="30.666666666666671"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="dismissBtn:" destination="ZHB-pz-lZH" eventType="touchUpInside" id="vpB-LW-SX7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시도별 코로나 확진자 현황을 나타내주는 화면입니다. 시도명, 총 확진자 수, 당일 확진자 수를 나타내고 있습니다. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS1-Lv-iYS">
+                                        <rect key="frame" x="25" y="116" width="309" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[코로나 확진자 현황판]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ou-xy-aml">
+                                        <rect key="frame" x="25" y="87" width="154" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시도별 안심식당을 나타주는 화면입니다. 안심식당이란 코로나19를 예방하고 소비자가 안심하고 이용할 수 있도록 방역 수직을 준수하는 음식점입니다. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="run-U5-JI6">
+                                        <rect key="frame" x="25" y="254" width="309" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="안심식당 리스트" translatesAutoresizingMaskIntoConstraints="NO" id="JRr-HA-o5S">
+                                        <rect key="frame" x="19" y="334" width="315" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="위의 버튼을 누르고 해당 지역을 선택하면 버튼 아래에 음식점이름과 음식점 전화번호가 나오게 됩니다." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uiw-kY-SNx">
+                                        <rect key="frame" x="25" y="386" width="309" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[시도별 안심식당 리스트]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msv-Eg-TtK">
+                                        <rect key="frame" x="25" y="225" width="169" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.54896372559999995" green="0.63140672450000002" blue="0.64697438480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jl5-JO-LIP"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qaV-QU-0kA" firstAttribute="width" secondItem="CiK-ql-hsG" secondAttribute="width" multiplier="0.917949" id="7Gd-81-xPS"/>
+                            <constraint firstItem="qaV-QU-0kA" firstAttribute="centerX" secondItem="CiK-ql-hsG" secondAttribute="centerX" id="WuI-90-NDz"/>
+                            <constraint firstItem="qaV-QU-0kA" firstAttribute="centerY" secondItem="CiK-ql-hsG" secondAttribute="centerY" id="XyO-Qa-pA2"/>
+                            <constraint firstItem="qaV-QU-0kA" firstAttribute="height" secondItem="CiK-ql-hsG" secondAttribute="height" multiplier="0.587678" id="yOh-A0-eu1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="qaV-QU-0kA" id="uba-d9-4Yg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHv-fJ-va3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187.6923076923076" y="118.72037914691943"/>
+        </scene>
         <!--First View Controller-->
         <scene sceneID="Zhv-Hi-kGd">
             <objects>
@@ -184,7 +280,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhT-uv-KZT" customClass="MarqueeLabel" customModule="MarqueeLabel">
                                 <rect key="frame" x="36.666666666666657" y="101" width="317" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -739,47 +835,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s70-nx-qFE" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="36.666666666666657" y="101" width="317" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="📢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siP-XG-7JS">
-                                <rect key="frame" x="362" y="107" width="23" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXz-H5-N28">
+                                <rect key="frame" x="158.66666666666666" y="744" width="72.666666666666657" height="31"/>
+                                <color key="backgroundColor" red="0.1960321069" green="0.42355087400000002" blue="0.5136594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
+                                <connections>
+                                    <action selector="logOutBtn:" destination="qXL-zO-4Pu" eventType="touchUpInside" id="KKl-Qf-Gr5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="내 정보🙍🏻🙍🏻‍♀️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqG-2Y-YXp">
+                                <rect key="frame" x="29" y="99" width="133" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="📢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ0-TB-40e">
-                                <rect key="frame" x="6" y="107" width="23" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="코로나 관련 정보 ☢️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE9-Nu-vEh">
+                                <rect key="frame" x="29" y="224" width="204" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="한국" translatesAutoresizingMaskIntoConstraints="NO" id="rjz-nE-dFt">
-                                <rect key="frame" x="0.0" y="172" width="390" height="638"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="U1I-0c-B8Z">
+                                <rect key="frame" x="18.333333333333343" y="256" width="326.33333333333326" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoU-ZC-ki1">
+                                        <rect key="frame" x="0.0" y="0.0" width="277.66666666666669" height="44"/>
+                                        <color key="tintColor" red="0.1960321069" green="0.42355087400000002" blue="0.5136594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" imagePlacement="trailing" title="백신 접종 예약하러 가기">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="openVaccineBtn:" destination="qXL-zO-4Pu" eventType="touchUpInside" id="CiV-ZU-jiB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOJ-Cm-86z">
+                                        <rect key="frame" x="0.0" y="68" width="326.33333333333331" height="44"/>
+                                        <color key="tintColor" red="0.1960321069" green="0.42355087400000002" blue="0.5136594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="safari" catalog="system" imagePlacement="trailing" title="백신 접종 현황 살펴보러 가기">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="vaccineStatusBtn:" destination="qXL-zO-4Pu" eventType="touchUpInside" id="lqM-13-z5Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxI-ni-Yyd">
+                                        <rect key="frame" x="0.0" y="136" width="326.33333333333331" height="44"/>
+                                        <color key="tintColor" red="0.1960321069" green="0.42355087400000002" blue="0.5136594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="코로나 관련 기사 읽으러 가기">
+                                            <imageReference key="image" image="safari" catalog="system"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="covidBoardBtn:" destination="qXL-zO-4Pu" eventType="touchUpInside" id="E4o-cB-b1q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d75-1Q-O43">
+                                <rect key="frame" x="29" y="139" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="준수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtF-SR-acu">
+                                <rect key="frame" x="83" y="153" width="40" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5kQ-zO-5cx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="s70-nx-qFE" firstAttribute="centerY" secondItem="Iqg-oX-BfB" secondAttribute="centerY" multiplier="0.28" id="14e-vg-tL3"/>
-                            <constraint firstItem="s70-nx-qFE" firstAttribute="centerX" secondItem="Iqg-oX-BfB" secondAttribute="centerX" id="3wC-Sn-Se1"/>
-                            <constraint firstItem="s70-nx-qFE" firstAttribute="height" secondItem="Iqg-oX-BfB" secondAttribute="height" multiplier="0.0402844" id="BDr-B0-pET"/>
-                            <constraint firstItem="s70-nx-qFE" firstAttribute="width" secondItem="Iqg-oX-BfB" secondAttribute="width" multiplier="0.812821" id="r3R-ee-otJ"/>
+                            <constraint firstItem="nXz-H5-N28" firstAttribute="centerX" secondItem="Iqg-oX-BfB" secondAttribute="centerX" id="3uD-TQ-ufM"/>
+                            <constraint firstItem="nXz-H5-N28" firstAttribute="centerY" secondItem="Iqg-oX-BfB" secondAttribute="centerY" multiplier="1.8" id="NcE-3N-cO3"/>
+                            <constraint firstItem="U1I-0c-B8Z" firstAttribute="centerX" secondItem="Iqg-oX-BfB" secondAttribute="centerX" multiplier="0.93" id="Wfl-U4-BDI"/>
+                            <constraint firstItem="U1I-0c-B8Z" firstAttribute="centerY" secondItem="Iqg-oX-BfB" secondAttribute="centerY" multiplier="0.82" id="oBS-LR-m6c"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="marqueeLabel" destination="s70-nx-qFE" id="OIR-KG-feY"/>
+                        <outlet property="covidLabel" destination="YE9-Nu-vEh" id="D5L-yy-z0j"/>
+                        <outlet property="logoutBtn" destination="nXz-H5-N28" id="Tva-EM-cxp"/>
+                        <outlet property="mypage" destination="HqG-2Y-YXp" id="dkz-kf-flj"/>
+                        <outlet property="userImage" destination="d75-1Q-O43" id="CeD-Tu-u7h"/>
+                        <outlet property="userName" destination="KtF-SR-acu" id="NAW-Sv-kQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1B-kN-cUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="814"/>
+            <point key="canvasLocation" x="2024.6153846153845" y="813.98104265402844"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="aUS-yp-hS7">
@@ -799,7 +949,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="지역 선택하기">
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="15"/>
-                                    <color key="baseBackgroundColor" red="0.13722297550000001" green="0.34511655569999999" blue="0.48229163889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.1960321069" green="0.42355087400000002" blue="0.5136594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -812,7 +962,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ano-b3-jwj" customClass="MarqueeLabel" customModule="MarqueeLabel">
                                 <rect key="frame" x="36.666666666666657" y="101" width="317" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -856,26 +1006,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZj-U0-2Bs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1707.6923076923076" y="813.98104265402844"/>
+            <point key="canvasLocation" x="1151" y="814"/>
         </scene>
     </scenes>
     <designables>
         <designable name="AhT-uv-KZT">
-            <size key="intrinsicContentSize" width="41" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="40.333333333333336" height="20.333333333333332"/>
         </designable>
         <designable name="ano-b3-jwj">
-            <size key="intrinsicContentSize" width="41" height="20.333333333333332"/>
-        </designable>
-        <designable name="s70-nx-qFE">
-            <size key="intrinsicContentSize" width="41" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="40.333333333333336" height="20.333333333333332"/>
         </designable>
     </designables>
     <resources>
         <image name="image-removebg-preview (19)" width="240" height="240"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <image name="안심식당 리스트" width="626" height="100"/>
         <image name="지도 스티커" width="894" height="1371"/>
         <image name="카카오" width="421" height="54"/>
         <image name="페이스북" width="420" height="55"/>
-        <image name="한국" width="649" height="1112"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
