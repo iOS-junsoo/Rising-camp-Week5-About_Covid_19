@@ -2,11 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSAppTransportSecurity</key>
-        <dict>
-            <key>NSAllowsArbitraryLoads</key>
-            <true/>
-        </dict>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-2113331824633055~9286735687</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -24,15 +26,6 @@
 			</array>
 		</dict>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>kakaokompassauth</string>
-        <string>kakaolink</string>
-    </array>
-	<key>FacebookAppID</key>
-	<string>582428363078055</string>
-	<key>FacebookDisplayName</key>
-	<string>About Covid-19</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -50,6 +43,10 @@
 		<string>fbauth2</string>
 		<string>fbshareextension</string>
 	</array>
+	<key>FacebookAppID</key>
+	<string>582428363078055</string>
+	<key>FacebookDisplayName</key>
+	<string>About Covid-19</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

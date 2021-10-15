@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         FBSDKCoreKit.Settings.appID = "582428363078055"
         KakaoSDKCommon.initSDK(appKey: "4f4328ba5d42fcf3d34fffba19d9f08c")
-        
         return true
     }
 

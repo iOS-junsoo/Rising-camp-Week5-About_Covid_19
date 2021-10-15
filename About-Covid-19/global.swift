@@ -10,4 +10,5 @@ import Foundation
 struct global {
     static var dropdownSelected:String = ""
     static var checkAccount = 0
+    
 }

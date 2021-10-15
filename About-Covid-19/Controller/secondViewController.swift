@@ -43,7 +43,7 @@ class secondViewController: UIViewController {
 //        mypage.layer.shadowOffset = CGSize(width: 0, height: 4)
 //        mypage.layer.shadowRadius = 5
 //        mypage.layer.shadowOpacity = 0.3
-//        
+//
 //        covidLabel.layer.shadowColor = UIColor.black.cgColor
 //        covidLabel.layer.masksToBounds = false
 //        covidLabel.layer.shadowOffset = CGSize(width: 0, height: 4)
@@ -129,15 +129,40 @@ class secondViewController: UIViewController {
     }
     
     @IBAction func logOutBtn(_ sender: UIButton) {
-//        UserApi.shared.logout {(error) in
-//            if let error = error {
-//                print(error)
-//            }
-//            else {
-//                print("logout() success.")
-//                self.logoutLogic()
-//            }
-//        }
+        
+        switch global.checkAccount {
+        case 1:
+            self.userName.text = ""
+            self.userName.sizeToFit()
+            self.userImage.image = UIImage(named: "")
+        case 2:
+            UserApi.shared.logout {(error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("logout() success.")
+                    self.logoutLogic()
+                }
+            }
+        case 3:
+            //facebook 사용자 정보 가져오기
+            Profile.loadCurrentProfile { profile, error in
+                if let firstName = profile?.firstName {
+                    print("Hello, \(firstName)")
+                    self.userName.text = firstName
+                }
+            }
+            
+            let profilePictureView = FBProfilePictureView()
+            profilePictureView.profileID = AccessToken.current!.userID
+            profilePictureView.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
+            userImage.addSubview(profilePictureView)
+
+        default:
+            print("error")
+        }
+       
         logoutLogic()
     }
     
